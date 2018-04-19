@@ -1,13 +1,78 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    height: 100%;
+    margin: 0 0 0 0;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.title {
+    color: #000000;
+    left: 50px;
+    top: 100px;
+    position: fixed;
+}
+
+.intro, .intro-paragraph {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+}
+
+.intro-paragraph {
+    top: 50px;
+    left: 25px;
+    width: 15%;
+    height: 80%;
+    min-width: 10em;
+    min-height: 20em;
+    padding: 5% 2% 5% 2%;
+    border: none;
+    background: rgba(157, 152, 152, 0.38);
+}
+
+.background-photo {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    min-height: 100%;
+    max-height: 200%;
+    max-width: 100%;
+}
+
+#portrait {
+
+    height: 10em;
+    margin: 2em 0 0 0;
+}
+
+.about, p {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    z-index: 0;
+}
+
+.about p {
+    top: 25%;
+    left: 25px;
+    font-size: 20px;
+    width: 40%;
+    height: 60%;
+    min-width: 30em;
+    min-height: 20em;
+    padding: 5% 2% 5% 2%;
+    border: none;
+    background: rgba(183, 218, 243, 0.8);
 }
 
 /* Carousel */
@@ -21,10 +86,6 @@
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
